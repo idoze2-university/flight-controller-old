@@ -1,0 +1,20 @@
+﻿WpfApp1
+
+
+winexe
+C#
+.cs
+C:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\obj\Debug\
+WpfApp1
+none
+false
+DEBUG;TRACE
+C:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\App.xaml
+18-590278898
+
+25-1503876387
+141107111067
+Components\View.xaml;Controllers\Aileron.xaml;Controllers\Joystick.xaml;Controllers\Throttle.xaml;Indicators\Aileron_indicator.xaml;Indicators\Airspeed_indicator.xaml;Indicators\Altimeter_altitude.xaml;Indicators\Altitude.xaml;Indicators\Elevator_indicator.xaml;Indicators\Ground_speed.xaml;Indicators\Heading_deg.xaml;Indicators\Internal_pitch.xaml;Indicators\Internal_roll.xaml;Indicators\Rudder_indicator.xaml;Indicators\Throttle_indicator.xaml;Indicators\Vertical_speed.xaml;MainWindow.xaml;Map\Map.xaml;
+
+False
+
