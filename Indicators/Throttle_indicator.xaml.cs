@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Windows.Controls;
-using WpfApp1.Interfaces;
-using WpfApp1.DataBase;
-namespace WpfApp1.Indicators
+using FlightSimulatorApp.Interfaces;
+using FlightSimulatorApp.DataBase;
+namespace FlightSimulatorApp.Indicators
 {
     public partial class Throttle_indicator : UserControl
     {

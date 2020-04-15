@@ -1,9 +1,9 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using WpfApp1.Interfaces;
-using WpfApp1.DataBase;
-namespace WpfApp1.Controllers
+using FlightSimulatorApp.Interfaces;
+using FlightSimulatorApp.DataBase;
+namespace FlightSimulatorApp.Controllers
 {
     public partial class Joystick : UserControl, IViewable
     {

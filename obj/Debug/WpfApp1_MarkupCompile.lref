@@ -1,15 +1,15 @@
 ﻿
 
-FC:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\Components\View.xaml;;
-FC:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\Controllers\Joystick.xaml;;
-FC:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\Indicators\Elevator_indicator.xaml;;
-FC:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\Indicators\Ground_speed.xaml;;
-FC:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\Indicators\Heading_deg.xaml;;
-FC:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\Indicators\Internal_pitch.xaml;;
-FC:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\Indicators\Internal_roll.xaml;;
-FC:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\Indicators\Rudder_indicator.xaml;;
-FC:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\Indicators\Throttle_indicator.xaml;;
-FC:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\Indicators\Vertical_speed.xaml;;
-FC:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\MainWindow.xaml;;
-FC:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\Map\Map.xaml;;
+FZ:\flight-controller\Components\View.xaml;;
+FZ:\flight-controller\Controllers\Joystick.xaml;;
+FZ:\flight-controller\Indicators\Elevator_indicator.xaml;;
+FZ:\flight-controller\Indicators\Ground_speed.xaml;;
+FZ:\flight-controller\Indicators\Heading_deg.xaml;;
+FZ:\flight-controller\Indicators\Internal_pitch.xaml;;
+FZ:\flight-controller\Indicators\Internal_roll.xaml;;
+FZ:\flight-controller\Indicators\Rudder_indicator.xaml;;
+FZ:\flight-controller\Indicators\Throttle_indicator.xaml;;
+FZ:\flight-controller\Indicators\Vertical_speed.xaml;;
+FZ:\flight-controller\MainWindow.xaml;;
+FZ:\flight-controller\Map\Map.xaml;;
 

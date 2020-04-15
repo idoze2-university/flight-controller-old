@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Windows.Controls;
-using WpfApp1.DataBase;
-using WpfApp1.Interfaces;
-namespace WpfApp1.Controllers
+using FlightSimulatorApp.DataBase;
+using FlightSimulatorApp.Interfaces;
+namespace FlightSimulatorApp.Controllers
 {
     public partial class Aileron : UserControl , IViewable
     {

@@ -1,5 +1,5 @@
 ﻿using System.Windows.Controls;
-namespace WpfApp1.Components
+namespace FlightSimulatorApp.Components
 {
     public partial class View : Page
     {

@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-namespace WpfApp1
+namespace FlightSimulatorApp
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

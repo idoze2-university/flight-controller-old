@@ -1,11 +1,11 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using WpfApp1.Interfaces;
-using WpfApp1.DataBase;
+using FlightSimulatorApp.Interfaces;
+using FlightSimulatorApp.DataBase;
 using System;
 
-namespace WpfApp1.Indicators
+namespace FlightSimulatorApp.Indicators
 {
     public partial class Aileron_indicator : UserControl, IViewable
     {
