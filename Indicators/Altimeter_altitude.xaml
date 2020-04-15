@@ -8,6 +8,6 @@
     <Grid>
 
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="353,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="84" FontFamily="Agency FB" RenderTransformOrigin="0.162,0.593"><Run FontWeight="Bold" Text="Altimeter alti (ft)"/></TextBlock>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="461.333,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0.00000" FontFamily="Agency FB" FontWeight="Bold" IsReadOnly="True" BorderThickness="0" Background="#00000000"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="461.333,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding altimeter_altitude}" FontFamily="Agency FB" FontWeight="Bold" IsReadOnly="True" BorderThickness="0" Background="#00000000"/>
     </Grid>
 </UserControl>

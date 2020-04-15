@@ -1,20 +1,15 @@
-﻿using System;
-using System.Windows.Controls;
-using WpfApp1.Interfaces;
-using WpfApp1.DataBase;
+﻿using System.Windows.Controls;
+using WpfApp1.Components;
 namespace WpfApp1.Indicators
 {
     public partial class Throttle_indicator : UserControl
     {
+        ViewModel db;
         public Throttle_indicator()
         {
             InitializeComponent();
-        }
-        public void view() { }
-        public void Load(object sender,EventArgs e)
-        {
-            Throttle_i.Text = Data.throttle_value.ToString();
-
+            db = ViewModel.getInstance();
+            DataContext = db;
         }
     }
 }

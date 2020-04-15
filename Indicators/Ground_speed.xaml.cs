@@ -1,13 +1,15 @@
 ﻿using System.Windows.Controls;
-using WpfApp1.Interfaces;
+using WpfApp1.Components;
 namespace WpfApp1.Indicators
 {
-    public partial class Ground_speed : UserControl, IViewable
+    public partial class Ground_speed : UserControl
     {
+        ViewModel db;
         public Ground_speed()
         {
             InitializeComponent();
+            db = ViewModel.getInstance();
+            DataContext = db;
         }
-        public void view() { }
     }
 }

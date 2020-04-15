@@ -1,13 +1,15 @@
 ﻿using System.Windows.Controls;
-using WpfApp1.Interfaces;
+using WpfApp1.Components;
 namespace WpfApp1.Indicators
 {
-    public partial class Vertical_speed : UserControl, IViewable
+    public partial class Vertical_speed : UserControl
     {
+        ViewModel db;
         public Vertical_speed()
         {
             InitializeComponent();
+            db = ViewModel.getInstance();
+            DataContext = db;
         }
-        public void view() { }
     }
 }

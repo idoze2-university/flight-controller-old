@@ -50,3 +50,4 @@ C:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\obj\Debug\Indicators
 C:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\obj\Debug\Indicators\Rudder_indicator.g.cs
 C:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\obj\Debug\Indicators\Elevator_indicator.baml
 C:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\obj\Debug\Indicators\Rudder_indicator.baml
+C:\Users\b_alo\Desktop\תכנות מתקדם ב\ex1\WpfApp1\obj\Debug\WpfApp1_Content.g.cs

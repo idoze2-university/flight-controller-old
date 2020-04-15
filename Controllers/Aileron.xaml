@@ -7,7 +7,7 @@
              d:DesignHeight="600" d:DesignWidth="800">
     <Grid>
         <TextBlock Margin="662.334,339.384,69.333,210.613" TextWrapping="Wrap" RenderTransformOrigin="0.463,0.465" FontFamily="Agency FB"><Run FontWeight="Bold" Text="Aileron"/></TextBlock>
-        <Slider Name="Aileron_slider" Margin="577.11,355.334,16.889,178.666" Value="5" Width="190" Opacity="0.7" Thumb.DragDelta="Controller_Drag">
+        <Slider Name="Aileron_slider" Margin="577.11,355.334,16.889,178.666" Value="{Binding aileron_slider_value}" Width="190" Opacity="0.7">
             <Slider.Effect>
                 <DropShadowEffect Color="Red" ShadowDepth="0"/>
             </Slider.Effect>

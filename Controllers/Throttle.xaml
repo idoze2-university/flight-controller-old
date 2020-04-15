@@ -7,7 +7,7 @@
              d:DesignHeight="600" d:DesignWidth="800">
     <Grid>
         <TextBlock HorizontalAlignment="Left" FontFamily="Agency FB" Height="22" Margin="402.111,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" RenderTransformOrigin="0.073,0.455"><Run FontWeight="Bold" Text="Throttle"/></TextBlock>
-        <Slider Name="Throttle_slider" HorizontalAlignment="Left" Margin="315,451,0,0" VerticalAlignment="Top" Width="200" RenderTransformOrigin="0.5,0.5" Opacity="0.695" Value="0" Background="#00000000" Thumb.DragDelta="Controller_Drag">
+        <Slider Name="Throttle_slider" HorizontalAlignment="Left" Margin="315,451,0,0" VerticalAlignment="Top" Width="200" RenderTransformOrigin="0.5,0.5" Opacity="0.695" Value="{Binding throttle_slider_value}" Background="#00000000">
             <Slider.Effect>
                 <DropShadowEffect Color="#FF00FF15" Direction="184" ShadowDepth="0"/>
             </Slider.Effect>

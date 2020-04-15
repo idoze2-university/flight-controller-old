@@ -3,7 +3,6 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:WpfApp1.Components"
       xmlns:controllers="clr-namespace:WpfApp1.Controllers"
       xmlns:Indicators="clr-namespace:WpfApp1.Indicators"
       xmlns:Map="clr-namespace:WpfApp1.Map"
@@ -29,7 +28,6 @@
         <Indicators:Internal_pitch/>
         <Indicators:Internal_roll/>
         <Indicators:Vertical_speed/>
-        
         <Indicators:Aileron_indicator/>
         <Indicators:Rudder_indicator/>
         <Indicators:Elevator_indicator/>

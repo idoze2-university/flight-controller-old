@@ -1,38 +1,29 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using WpfApp1.Interfaces;
-using WpfApp1.DataBase;
+using WpfApp1.Components;
+using System;
 namespace WpfApp1.Controllers
 {
-    public partial class Joystick : UserControl, IViewable
+    public partial class Joystick : UserControl
     {
+        ViewModel vm = ViewModel.getInstance();
         public Joystick()
         {
             InitializeComponent();
+            DataContext = vm;
         }
-        private void KnobBase_MoveKnob(object sender, MouseEventArgs e)
+        private void Knob_Move(object sender, MouseEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
             {
                 Point p = e.GetPosition(inner_Pad);
-                Data.rudder = (p.X - Data.PAD_RADIUS)/Data.PAD_RADIUS;
-                Data.elevator = -(p.Y - Data.PAD_RADIUS)/ Data.PAD_RADIUS;
-                view();
+                vm.Command(Commands.Commands.KNOB_MOVE_CMD, p);
             }
         }
-        private void KnobBase_ReleaseKnob(object sender, MouseEventArgs e)
+        private void Knob_Release(object sender, EventArgs e)
         {
-            Data.rudder = 0;
-            Data.elevator = 0;
-            view();
-        }
-        public void view()
-        {
-            Thickness margin = KnobBase.Margin;
-            margin.Left = Data.X;
-            margin.Top = Data.Y;
-            KnobBase.Margin = margin;
+            vm.Command(Commands.Commands.KNOB_RELEASE_CMD, null);
         }
     }
 }

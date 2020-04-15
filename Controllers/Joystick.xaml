@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:WpfApp1.Controllers"
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="800">
     <Grid>
@@ -74,24 +73,28 @@
             </Path>
             <Canvas  x:Name="KnobBase_click" VerticalAlignment="Top" HorizontalAlignment="Left" Width="0" Height="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="125" Canvas.Top="125">
                <!--KNOB START-->
-                <Ellipse x:Name="KnobBase" HorizontalAlignment="Left" Height="90"  VerticalAlignment="Top" Width="90" Margin="0,0" Canvas.Top="1" MouseMove="KnobBase_MoveKnob" MouseLeftButtonUp="KnobBase_ReleaseKnob">
+                <Ellipse x:Name="KnobBase" HorizontalAlignment="Left" Height="90"  VerticalAlignment="Top" Width="90" Margin="{Binding point_margin}" Canvas.Top="1" MouseMove="Knob_Move">
                     <Ellipse.Fill>
                         <RadialGradientBrush>
                             <GradientStop Color="#FF3F0540" />
                             <GradientStop Color="#FFED00FF" Offset="1" />
                         </RadialGradientBrush>
                     </Ellipse.Fill>
-                    
+                    <Ellipse.Triggers>
+                        <EventTrigger RoutedEvent="Ellipse.MouseLeftButtonUp">
+                            <BeginStoryboard>
+                                <Storyboard Completed="Knob_Release" FillBehavior="Stop">
+                                    <ThicknessAnimation   
+                                        Storyboard.TargetName="KnobBase"
+                                        Storyboard.TargetProperty="(Ellipse.Margin)"
+                                        To="0" AccelerationRatio="1" 
+                                        Duration="0:0:0.2"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Ellipse.Triggers>
                 </Ellipse>
-               
                 <!--KNOB END-->
-
-                <Canvas.RenderTransform>
-                    <TranslateTransform x:Name="knobPosition" />
-
-                </Canvas.RenderTransform>
-
-
             </Canvas>
         </Canvas>
     </Grid>

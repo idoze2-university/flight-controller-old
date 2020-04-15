@@ -4,15 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
-             xmlns:local="clr-namespace:WpfApp1.Map"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Grid.Effect>
             <DropShadowEffect/>
         </Grid.Effect>
-        <m:Map CredentialsProvider="AttsGkqIHCOIEA11KtQZDphl5bi8lppin64jeg-ZOOhiS4cdHA_EXJwHSbyZi4Xo" Mode="Road" ZoomLevel="16" Center="32.068877,34.843361" Margin="2,142,387.667,1" Opacity="0.73">
-            <m:Pushpin x:Name="Pin" Foreground="White" Opacity="0.9">
+        <m:Map x:Name="map" CredentialsProvider="AttsGkqIHCOIEA11KtQZDphl5bi8lppin64jeg-ZOOhiS4cdHA_EXJwHSbyZi4Xo" Mode="Road" ZoomLevel="16" Center="21.3814681,-157.7118886" Margin="2,142,387.667,1" Opacity="0.73">
+            <m:Pushpin x:Name="Pin" Foreground="White" Opacity="0.9" m:MapLayer.Position="{Binding pin_location}">
                 <m:Pushpin.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF4100FF" Offset="0"/>

@@ -8,7 +8,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Height="19.667" Margin="558,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80.667" FontFamily="Agency FB"><Run FontWeight="Bold" Text="Internal Roll (deg)"/></TextBlock>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="664.333,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0.00000" FontFamily="Agency FB" FontWeight="Bold" IsReadOnly="True" BorderThickness="0" Background="#FF2342FF"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="664.333,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding internal_roll}" FontFamily="Agency FB" FontWeight="Bold" IsReadOnly="True" BorderThickness="0" Background="#FF2342FF"/>
 
     </Grid>
 </UserControl>

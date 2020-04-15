@@ -1,4 +1,4 @@
-﻿namespace WpfApp1.DataBase
+﻿namespace FlightSimulatorApp.DataBase
 {
     public static class Data
     {
@@ -9,17 +9,19 @@
         public const double SLIDER_MIN = 0;
 
         private static double asv = SLIDER_INIT_AILERON, av = 0;
-        private static double tsv = SLIDER_INIT_THROTTLE, tv=0;
-        private static double x=0, y=0, r=0, e=0;
+        private static double tsv = SLIDER_INIT_THROTTLE, tv = 0;
+        private static double x = 0, y = 0, r = 0, e = 0;
 
-        public static double aileron_slider_value { 
-            get { return asv; } 
-            set {
+        public static double aileron_slider_value
+        {
+            get { return asv; }
+            set
+            {
                 if (value > SLIDER_MAX) { asv = SLIDER_MAX; }
                 else if (value < SLIDER_MIN) { asv = SLIDER_MIN; }
                 else { asv = value; }
                 av = (asv - SLIDER_INIT_AILERON) / SLIDER_INIT_AILERON;
-            } 
+            }
         }
         public static double throttle_slider_value
         {
@@ -33,7 +35,8 @@
             }
         }
 
-        public static double aileron_value {
+        public static double aileron_value
+        {
             get
             {
                 return av;
@@ -55,7 +58,8 @@
                 av = (asv - SLIDER_INIT_AILERON) / SLIDER_INIT_AILERON;
             }
         }
-        public static double throttle_value {
+        public static double throttle_value
+        {
             get
             {
                 return tv;
@@ -64,7 +68,7 @@
             {
                 if (value >= 1)
                 {
-                    tsv = SLIDER_MAX;              
+                    tsv = SLIDER_MAX;
                 }
                 else if (value <= 0)
                 {
@@ -72,7 +76,7 @@
                 }
                 else
                 {
-                    tsv = value*10;
+                    tsv = value * 10;
                 }
                 tv = tsv / SLIDER_MAX;
             }
@@ -84,7 +88,7 @@
             set
             {
                 if (value > PAD_RADIUS) { x = PAD_RADIUS; }
-                else if (value < PAD_RADIUS) { x = - PAD_RADIUS; }
+                else if (value < PAD_RADIUS) { x = -PAD_RADIUS; }
                 else { x = value; }
                 r = x / PAD_RADIUS;
             }
@@ -101,23 +105,26 @@
             }
         }
 
-        public static double rudder {
+        public static double rudder
+        {
             get { return r; }
-            set {
+            set
+            {
                 if (value > 1) { r = 1; }
                 else if (value < -1) { r = -1; }
                 else { r = value; }
                 x = r * PAD_RADIUS;
             }
         }
-        public static double elevator {
+        public static double elevator
+        {
             get { return e; }
             set
             {
                 if (value > 1) { e = 1; }
                 else if (value < -1) { e = -1; }
                 else { e = value; }
-                y = - e * PAD_RADIUS;
+                y = -e * PAD_RADIUS;
             }
         }
     }

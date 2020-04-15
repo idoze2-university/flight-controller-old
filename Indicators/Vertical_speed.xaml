@@ -8,6 +8,6 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="558,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" FontFamily="Agency FB"><Run FontWeight="Bold" Text="Vertical Speed (kt)"/></TextBlock>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="664.333,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0.00000" FontFamily="Agency FB" FontWeight="Bold" IsReadOnly="True" BorderThickness="0" Background="#00000000"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="664.333,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding vertical_speed}" FontFamily="Agency FB" FontWeight="Bold" IsReadOnly="True" BorderThickness="0" Background="#00000000"/>
     </Grid>
 </UserControl>

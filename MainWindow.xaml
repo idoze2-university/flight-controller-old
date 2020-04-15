@@ -5,6 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:Components="clr-namespace:WpfApp1.Components"
         mc:Ignorable="d"
-        Title="Fligh Simulator" Height="600" Width="800" Visibility="Visible" ResizeMode="NoResize">
+        Title="Flight Simulator" Height="600" Width="800" Visibility="Visible" ResizeMode="NoResize">
     <Components:View/>
 </Window>

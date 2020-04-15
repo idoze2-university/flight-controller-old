@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("mainwindow.xaml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("map/microsoft.maps.mapcontrol.wpf.dll")]
 
 

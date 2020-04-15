@@ -1,13 +1,15 @@
 ﻿using System.Windows.Controls;
-using WpfApp1.Interfaces;
+using WpfApp1.Components;
 namespace WpfApp1.Indicators
 {
-    public partial class Rudder_indicator : UserControl, IViewable
+    public partial class Rudder_indicator : UserControl
     {
+        ViewModel db;
         public Rudder_indicator()
         {
             InitializeComponent();
+            db = ViewModel.getInstance();
+            DataContext = db;
         }
-        public void view() { }
     }
 }
