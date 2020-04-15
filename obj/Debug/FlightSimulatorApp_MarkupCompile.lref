@@ -1,0 +1,15 @@
+﻿Z:\flight-controller\obj\Debug\GeneratedInternalTypeHelper.g.cs
+
+FZ:\flight-controller\Components\View.xaml;;
+FZ:\flight-controller\Controllers\Joystick.xaml;;
+FZ:\flight-controller\Indicators\Elevator_indicator.xaml;;
+FZ:\flight-controller\Indicators\Ground_speed.xaml;;
+FZ:\flight-controller\Indicators\Heading_deg.xaml;;
+FZ:\flight-controller\Indicators\Internal_pitch.xaml;;
+FZ:\flight-controller\Indicators\Internal_roll.xaml;;
+FZ:\flight-controller\Indicators\Rudder_indicator.xaml;;
+FZ:\flight-controller\Indicators\Throttle_indicator.xaml;;
+FZ:\flight-controller\Indicators\Vertical_speed.xaml;;
+FZ:\flight-controller\MainWindow.xaml;;
+FZ:\flight-controller\Map\Map.xaml;;
+
